@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { DocumentationModule } from './modules/documentation/documentation.module';
 import { appConfig } from './config/app.config';
 import { EvolutionModule } from './modules/evolution/evolution.module';
+import { WhatsappModule } from './modules/whatsapp/whatsapp.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { EvolutionModule } from './modules/evolution/evolution.module';
     }),
     DocumentationModule,
     EvolutionModule,
+    WhatsappModule,
   ],
 })
 export class AppModule {}
